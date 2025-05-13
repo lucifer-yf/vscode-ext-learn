@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.12">
+  <diagram name="Page-1" id="JZLUigRVSmPCtkpNGvvR">
+    <mxGraphModel dx="1816" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-1" value="VS Code 扩展 (Native 端)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F6FF;strokeColor=#73A6FF;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="100" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-2" value="Webview" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF6CC;strokeColor=#FFBC52;" vertex="1" parent="1">
+          <mxGeometry x="550" y="100" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-3" value="Bridge" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEB;strokeColor=#E68994;" vertex="1" parent="1">
+          <mxGeometry x="300" y="390" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-4" value="KwaiPilotBridge" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F6FF;strokeColor=#73A6FF;" vertex="1" parent="1">
+          <mxGeometry x="760" y="300" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-5" value="WebloggerManager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F6FF;strokeColor=#73A6FF;" vertex="1" parent="1">
+          <mxGeometry x="550" y="500" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-6" value="创建 Webview 视图" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-1" target="VQzCv03pMTB5qN_IZwIZ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-7" value="初始化 RPC 通信上下文" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-2" target="VQzCv03pMTB5qN_IZwIZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-8" value="发送 RPC_MESSAGE 单向消息" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-2" target="VQzCv03pMTB5qN_IZwIZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-9" value="转发 RPC_MESSAGE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-3" target="VQzCv03pMTB5qN_IZwIZ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-10" value="处理 RPC_MESSAGE 并返回结果" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-1" target="VQzCv03pMTB5qN_IZwIZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-11" value="返回处理结果" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-3" target="VQzCv03pMTB5qN_IZwIZ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-12" value="发送 callHandler 消息" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-2" target="VQzCv03pMTB5qN_IZwIZ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-13" value="处理 callHandler 消息" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-1" target="VQzCv03pMTB5qN_IZwIZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-14" value="发送 callback 消息返回结果" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-3" target="VQzCv03pMTB5qN_IZwIZ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-15" value="发送 message 单向消息" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-2" target="VQzCv03pMTB5qN_IZwIZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-16" value="转发 message 消息" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-3" target="VQzCv03pMTB5qN_IZwIZ-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VQzCv03pMTB5qN_IZwIZ-17" value="记录用户操作日志" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=10;entryX=0.5;entryY=0;entryDx=0;entryDy=-10;" edge="1" parent="1" source="VQzCv03pMTB5qN_IZwIZ-2" target="VQzCv03pMTB5qN_IZwIZ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
